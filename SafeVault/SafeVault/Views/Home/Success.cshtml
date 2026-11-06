@@ -1,0 +1,27 @@
+﻿@model SafeVault.Models.UserInputModel
+
+@{
+    ViewData["Title"] = "Submission Successful";
+}
+
+<h1>Submission Successful</h1>
+
+<p>The information passed SafeVault's input-validation rules.</p>
+
+<h2>Validated Information</h2>
+
+<p>
+    <strong>Username:</strong><br />
+    @Model.Username
+</p>
+
+<p>
+    <strong>Email:</strong><br />
+    @Model.Email
+</p>
+
+<p>
+    <a asp-controller="Home" asp-action="Index">
+        Return to the form
+    </a>
+</p>

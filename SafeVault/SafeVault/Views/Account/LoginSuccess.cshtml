@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Login Successful";
+}
+
+<h1>Login Successful</h1>
+
+<p>
+    SafeVault authenticated the submitted credentials.
+</p>
+
+<p>
+    <strong>Authenticated user:</strong><br />
+    @User.Identity?.Name
+</p>
+
+<p>
+    <a asp-controller="Home" asp-action="Index">
+        Continue to SafeVault
+    </a>
+</p>

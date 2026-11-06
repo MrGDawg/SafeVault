@@ -1,0 +1,42 @@
+﻿@model SafeVault.Models.UserInputModel
+
+@{
+    ViewData["Title"] = "SafeVault";
+}
+
+<h1>SafeVault</h1>
+
+<p>Secure Coding Demonstration Application</p>
+
+<h2>User Information</h2>
+
+<form asp-controller="Home"
+      asp-action="Index"
+      method="post">
+
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="ModelOnly"></div>
+
+    <div>
+        <label asp-for="Username"></label>
+        <input asp-for="Username"
+               autocomplete="username"
+               maxlength="50" />
+        <span asp-validation-for="Username"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email"
+               autocomplete="email"
+               maxlength="254" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <br />
+
+    <button type="submit">Submit</button>
+</form>

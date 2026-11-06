@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Access Denied";
+}
+
+<h1>Access Denied</h1>
+
+<p>
+    The authenticated account does not have permission
+    to access this resource.
+</p>
+
+<p>
+    <strong>Authenticated user:</strong><br />
+    @User.Identity?.Name
+</p>
+
+<p>
+    <a asp-controller="Home" asp-action="Index">
+        Return to SafeVault
+    </a>
+</p>

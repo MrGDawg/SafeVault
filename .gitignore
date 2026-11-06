@@ -1,0 +1,64 @@
+# ------------------------------------------------------------
+# SafeVault GitHub exclusions
+# ------------------------------------------------------------
+
+# Visual Studio local settings and cache
+.vs/
+**/.vs/
+
+# Build output
+**/bin/
+**/obj/
+
+# User-specific Visual Studio project settings
+*.user
+*.suo
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+# ------------------------------------------------------------
+# SafeVault local database
+# ------------------------------------------------------------
+
+# The development SQLite database contains local application
+# data and password hashes. SafeVault recreates the database
+# when required.
+*.db
+*.db-shm
+*.db-wal
+
+# ------------------------------------------------------------
+# Secrets and local environment configuration
+# ------------------------------------------------------------
+
+# Never commit local secret/environment files.
+secrets.json
+.env
+.env.*
+*.secrets.json
+
+# ------------------------------------------------------------
+# Test/build artifacts
+# ------------------------------------------------------------
+
+TestResults/
+*.trx
+coverage/
+coverage.*
+*.coverage
+*.coveragexml
+
+# ------------------------------------------------------------
+# Operating-system clutter
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# Local publish output
+# ------------------------------------------------------------
+
+publish/
+**/publish/
